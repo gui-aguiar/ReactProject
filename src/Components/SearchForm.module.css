@@ -1,0 +1,10 @@
+.SearchForm {
+    width: 410px;
+    height: 230px;
+    margin: 30px 30px 352px 208px;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 var(--warm-grey-75);
+    border: solid 1px var(--gainsboro);
+    background-color: #fff;
+  }
