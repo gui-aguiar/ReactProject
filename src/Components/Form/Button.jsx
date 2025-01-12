@@ -1,14 +1,17 @@
 import React from "react";
+import styles from "./Button.module.css";
 
-const Button = ({ id, setValue, ...props }) => {
+// pq eu coloco esse negocio em volta se eu ja estou voltando um elemento botao, ou um elemento input etc?
+const Button = ({ id, label, disabled, setValue, ...props }) => {
     return (
-      <>
-        <button
-          id={id}
-          onChange={({ target }) => setValue(target.value)}
-          {...props}
-        />
-      </>
+      <button  className={`${styles.button} ${disabled ? styles.disabled : styles.enabled}`}
+        id={id}          
+        onChange={({ target }) => setValue(target.value)}
+        disabled={disabled}
+        {...props}
+      >
+      {label}
+      </button>      
     );
   };
 

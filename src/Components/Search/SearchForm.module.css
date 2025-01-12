@@ -1,0 +1,45 @@
+/*.SearchForm {
+    width: 350px;
+    height: 170px;
+   /* margin: 30px 30px 352px 208px; */
+   /* padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 var(--warm-grey-75);
+    border: solid 1px var(--gainsboro);
+    background-color: #fff;
+
+    display: grid;
+grid-template-columns: 1fr; /* Uma única coluna que ocupa todo o espaço */
+/*grid-gap: 20px; /* Espaçamento entre os elementos */
+/*max-width: 350px; /* Limita a largura total */
+/*
+  }*/
+
+  .SearchForm {
+    display: grid; /* Usar Grid para organizar os elementos internos */
+    grid-template-columns: 1fr; /* Apenas uma coluna */
+    grid-gap: 20px;
+
+    width: 350px; /* Largura interna */
+    padding: 30px; /* Espaço interno */
+    max-width: 410px; /* Garante consistência com padding incluído */
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 var(--warm-grey-75);
+    border: solid 1px var(--gainsboro);
+    background-color: #fff;
+
+}
+
+.SearchForm label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #383838;
+}
+
+
+/*a cor peag do pai por isso tenho que colocar o branco */

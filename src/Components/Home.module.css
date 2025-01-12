@@ -1,7 +1,13 @@
 
 .home {
-    width: 1440px;
-    height: 900px;
-    padding: 0 0 238px;
+    width: 100%;
+    min-height: 100vh; /* Garantir que o container ocupe a altura da tela */
+    display: flex;
+    justify-content: center; /* Centralizar os painéis horizontalmente */
+    align-items: flex-start; /* Centralizar os painéis verticalmente */
+    gap: 30px; /* Espaçamento entre os painéis */
+    padding: 30px; /* Espaço lateral para telas menores */
     background-color: #ededed;
+    box-sizing: border-box;
 }
+  

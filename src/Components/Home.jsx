@@ -1,12 +1,12 @@
 import React from "react";
 import styles from './Home.module.css';
-import SearchForm from "./SearchForm";
+import SearchForm from "./Search/SearchForm";
+import ResultsContainer from "./Results/ResultsContainer";
 
 const Home = () => {
     return <div className={styles.home}>
-        Aqui provavelmente eu vou ter um estilo pra essa div
-        e dentro dela, eu tenho os dois componentes que vou fazer
         <SearchForm/>
+        <ResultsContainer/>
     </div>
 };
 
