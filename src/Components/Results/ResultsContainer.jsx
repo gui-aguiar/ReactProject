@@ -6,22 +6,26 @@ import ResultContainerInfo from "./ResultContainerInfo";
 
 const ResultsContainer = ({ results, searching }) => {
     const infoLabel = searching ? 'Searching...' : "There are zero matches. Use the form to search for People or Movies."
+    const itemsCount = results.length;
+
     return <div className={style.resultsContainer}>
         <ResultsContainerItem text="Results" fontSize="18px" />  
 
-        {results.length === 0 && <ResultContainerInfo text={infoLabel} />}     
+        <div className={style.resultsItemsContainer} style={{justifyContent: itemsCount > 0 ? "flex-start" : "center"}}> 
+            {itemsCount === 0 && <ResultContainerInfo text={infoLabel} />}     
 
-        {results.length > 0 && results.map((result) => (
-            <ResultsContainerItem
-            key={result.url }
-            text={result.name ? result.name : result.title }
-            extraItem={
-                <Button id="viewDetails" disabled={false} disabledStyle={false}> 
-                View Details
-                </Button>
-            }
-            />
-        ))}
+            {itemsCount > 0 && results.map((result) => (
+                <ResultsContainerItem
+                key={result.url}
+                text={result.name ? result.name : result.title }
+                extraItem={
+                    <Button id="viewDetails" disabled={false} disabledStyle={false}> 
+                    View Details
+                    </Button>
+                }
+                />
+            ))}
+        </div>
     </div>
 };
 

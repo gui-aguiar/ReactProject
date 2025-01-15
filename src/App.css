@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
-/*
-colocar coisas que resetam e que vao ser usadas por todo mundo aqui
-tipo as variaveis e tal
-e os resets dos compoenentes principais
-*/
-
 :root {
     --gainsboro: #dadada;
     --green-teal: #0ab463;
@@ -15,35 +9,8 @@ e os resets dos compoenentes principais
     --warm-grey-75: rgba(132, 132, 132, 0.75);
 }
 
-/*
-
-@font-face {
-    font-family: Montserrat;
-    src: local(Montserrat-Bold),
-      url(/path/to/Montserrat-Bold.woff2) format("woff2"),
-      url(/path/to/Montserrat-Bold.woff) format("woff"),
-      url(/path/to/Montserrat-Bold.ttf) format("truetype");
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-  }
-  
-  .Text-Style {
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000;
-  }
-*/
-
-
-/* Estilo global para a fonte Montserrat */
 .Text-Style {
-  font-family: 'Montserrat', sans-serif; /* Define Montserrat com fallback */
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
@@ -52,4 +19,3 @@ e os resets dos compoenentes principais
   letter-spacing: normal;
   color: #000;
 }
-head, div { margin: 0px}

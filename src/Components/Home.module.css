@@ -1,13 +1,22 @@
 
 .home {
     width: 100%;
-    min-height: 100vh; /* Garantir que o container ocupe a altura da tela */
+    min-height: 100vh;
     display: flex;
-    justify-content: center; /* Centralizar os painéis horizontalmente */
-    align-items: flex-start; /* Centralizar os painéis verticalmente */
-    gap: 30px; /* Espaçamento entre os painéis */
-    padding: 30px; /* Espaço lateral para telas menores */
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 50px;
     background-color: #ededed;
     box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+    .home {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
 }
   

@@ -1,8 +1,3 @@
-/* Button.module.css 
-
-    transition: background-color 0.3s, color 0.3s, opacity 0.3s;
-    
-    */
 .button {
     padding: 8px 15px;
     font-family: 'Montserrat', sans-serif;
@@ -21,6 +16,6 @@
   .disabled {    
     border: solid 1px var(--pinkish-grey);
     background-color: var(--pinkish-grey);
-    cursor: not-allowed; /* Mostra que o botão não pode ser clicado */
+    cursor: not-allowed; 
   }
   
