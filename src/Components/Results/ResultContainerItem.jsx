@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./ResultContainerItem.module.css";
+import style from "./ResultsContainerItem.module.css";
 
 const ResultsContainerItem = ({ text, fontSize = '16px', extraItem }) => {
     return (
