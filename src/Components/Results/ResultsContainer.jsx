@@ -4,16 +4,25 @@ import ResultsContainerItem from "./ResultContainerItem";
 import Button from "../Form/Button";
 import ResultContainerInfo from "./ResultContainerInfo";
 
+
 const ResultsContainer = ({ results }) => {
-    const tste = <Button id="xx" label="View Details" disabled={false}/>  
-    return <div className={style.resultsContainer}>
-        <ResultsContainerItem text="Results" fontSize="18px" />       
-        <ResultContainerInfo text={`There are zero matches. Use the form to search for People or Movies.`}/>
-    </div>
+return <div className={style.resultsContainer}>
+    <ResultsContainerItem text="Results" fontSize="18px" />  
+
+    {results.length === 0 && <ResultContainerInfo text="There are zero matches. Use the form to search for People or Movies." />}     
+
+    {results.length > 0 && results.map((result) => (
+        <ResultsContainerItem
+        key={result.url }
+        text={result.name ? result.name : result.title }
+        extraItem={
+            <Button id="viewDetails" disabled={false} disabledStyle={false}> 
+            View Details
+            </Button>
+        }
+        />
+    ))}
+</div>
 };
 
 export default ResultsContainer;
-
-
-// cara. com ctz tem algum jeito de centralizar essa porra de outra maneiera
-// com ctz eu consigo quebrar a porra da linh de algum outro jeito 
