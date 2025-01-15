@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./ResultsContainerItem.module.css";
+import style from "./ResultContainerItem.module.css";
 
 const ResultsContainerItem = ({ text, fontSize = '16px', extraItem }) => {
     return (
@@ -16,10 +16,3 @@ const ResultsContainerItem = ({ text, fontSize = '16px', extraItem }) => {
 };
 
 export default ResultsContainerItem;
-
-// essa abordagem do parametro ali prece um pouco diferente do resto que eu fiz, entao tenho umas coisas meio estranhas em cada componente
-// depois que eu terminar, eu vou tentar fazer isso de uma melhor forma, procurar por inconsistencias no codigo
-// e tentar padronizar as coisas 
-
-// exemplo, pq tem uns caras que voltam <> e outros nao? pq em um input eu coloquei isso ? 
-// pq eu nao coloquei o disabled igual eu fiz ali no parametro? pq eu nao fiz um ifzao aqui tbm ? 

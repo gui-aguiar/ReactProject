@@ -8,7 +8,7 @@ const Home = () => {
     const globalContext = React.useContext(GlobalContext);
     return <div className={styles.home}>
         <SearchForm/>
-        <ResultsContainer results={globalContext.searchResult}/>
+        <ResultsContainer results={globalContext.searchResult} searching={globalContext.searching}/>
     </div>
 };
 

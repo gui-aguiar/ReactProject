@@ -10,6 +10,7 @@
     text-align: center;
     border-radius: 20px;
     color: #fff;
+    cursor: pointer;
   }
   
   .enabled {
@@ -17,7 +18,7 @@
     border: solid 1px var(--green-teal);
   }
   
-  .disabled {
+  .disabled {    
     border: solid 1px var(--pinkish-grey);
     background-color: var(--pinkish-grey);
     cursor: not-allowed; /* Mostra que o botão não pode ser clicado */
