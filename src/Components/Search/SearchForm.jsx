@@ -3,7 +3,7 @@ import Radio from "../Form/Radio";
 import Input from "../Form/Input";
 import Button from "../Form/Button";
 import styles from './SearchForm.module.css';
-import { API_URL } from "../API/Api";
+import API_URL from "../API/Api";
 import { GlobalContext } from "../../GlobalContext";
 
 const SearchForm = () => {
@@ -20,7 +20,7 @@ const SearchForm = () => {
       event.preventDefault();
 
       globalContext.setSearching(true);
-      let data = await fetch(`${API_URL}/${searchKey}?search=${searchString}`);
+      let data = await fetch(`${API_URL}/api/${searchKey}?search=${searchString}`);
       const json = await data.json();
       globalContext.setSearching(false);
 
