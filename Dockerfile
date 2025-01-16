@@ -8,10 +8,10 @@ RUN npm install
 
 COPY . .
 
-ARG REACT_APP_API_URL
-ENV REACT_APP_API_URL=$REACT_APP_API_URL
+ARG VITE_APP_API_URL
+ENV VITE_APP_API_URL=$VITE_APP_API_URL
 
-RUN npm run build
+RUN npm run build --build-arg VITE_APP_API_URL
 
 FROM httpd:2.4-alpine
 
